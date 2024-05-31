@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript Developer</title>
+  </head>
+  <body>
+    <!-- Javascript file -->
+    <!-- comment-1 -->
+
+    <script>
+      //comment-1
+      /* document.write("Hello Javascript")*/
+
+      //### Class-3 variables
+      /* var x = 10;
+   var y = 20;
+   var z = x+y;
+   document.write(z); */
+
+      //### Class-5 -Non privative data type
+      /* Object - Array - RegExp */
+      /* var a = {
+      name: "Azizu hakim",
+      age:30,
+      city:"Dhaka",
+     }
+   document.write(a.name, a.age , a.city) */ // question : space ceate
+
+      //Array
+      /* var a = [ 'Dhaka', 'Bangladesh',  'Brahmanbaria']
+      document.write(a) */
+
+      //### Class-6 Operator
+
+      //### Class-6 if / if else / if else if
+      /* var age = 3;
+   var city ="Dhaka";
+   if(age>18 && city == "Dhaka") {
+    document.write('You are adult');
+   }
+    else{
+        document.write('You are child')
+    } */
+
+      //Multi-condition
+      /* var marks = 567;
+  if(marks >= 80 && marks <=100 ) {
+    document.write("GPA = A+");
+  }
+  else if (marks<80 && marks>=70){
+  document.write("GPA = A");  
+  }
+  else if(marks<70 && marks>=60){
+    document.write("GPA= A-");
+  }
+  else if (marks<60 && marks>=50){
+      document.write("GPA = B");  
+  }
+  else if( marks<50 && marks>=40){
+    document.write("GPA = C"); 
+  }
+  else if(marks>40 && marks<=33){
+    document.write("GPA = D")
+  }
+  else{
+    document.write( "GPA = F")
+  } */
+
+      //### Class-8 Switch Case
+      /* var marks =60;
+  switch(true){
+   case( marks<=100 && marks>=80):
+      document.write("A+")
+    break;
+    case (marks<80 && marks>=70):
+      document.write("A")
+      break;
+    case( marks<70 && marks>=60):
+      document.write("A-")
+      break;
+    case(marks<60 && marks>=50):
+        document.write("B")
+        break;
+    case(marks<50 && marks>=40):
+      document.write("C")
+      break;
+    case(marks<40 && marks>=30):
+      document.write("D")
+      break;
+
+    default:
+    document.write("F"); 
+  }*/
+
+      //#### js loop
+      // for loop
+      /* var i;
+   for(i=0; i<10; i=i+1 ){
+    // body barbar gora
+    document.write("<button>Submit</button>")
+}*/
+      /*var i;
+for(i=0; i<10; i=i+1 ){
+    // body barbar gora
+    document.write(i +"<button>Submit</button> <br>")
+} */
+
+      //#### class-10 break/ continue/
+      // 1,2,3 button continue delete
+      /* var i;
+for(i=0; i<10; i=i+1 ){
+      if(i==5 || i==8){
+        continue;
+      }
+    document.write(i +"<button>Submit</button> <br>")
+} */
+
+      // break/stop/ No in font of buttonb
+      /* var i;
+for(i=0; i<10; i=i+1 ){
+      if(i==3){
+        break;
+      }
+    document.write(i +"<button>Submit</button> <br>")
+}*/
+
+      //##### class-11 while loop
+      /* var i=0;
+while(1<3){
+  document.write(i+"<button> For loop </button>");
+  i=i+1
+} */
+
+      //##### class-11 do for loop
+      /*var i=0;
+do {
+  document.write(i+"<button> Do while loop </button> <br>");
+  i =i+1
+} while(i<3) */
+
+      //### class-13 Funtion
+      /* function addTwoNumber (){
+  var num1=108;
+  var num2=30;
+  var num3=num1+num2;
+  document.write(num3 +"<br>")
+}
+addTwoNumber()
+addTwoNumber() */
+
+      //### class-14 Funtion Paramiter
+      /* function addTwoNumber (num1,num2){
+  var num3 = num1 + num2;
+  document.write(num3 +"<br>")
+}
+addTwoNumber( 40,30)
+addTwoNumber(3,5) */
+
+      /* function writeMyname (name){
+document.write( name+"<br>")
+}
+writeMyname("Jack alaja");
+writeMyname("ali");
+writeMyname("jonson");
+writeMyname("Jack alaja"); */
+
+      /*  function addnumber (x1,x2){ 
+  return x1+x2;
+}
+var newNumber =  addnumber(2,4) +5;
+document.write(newNumber) */
+
+      /* function addnumber (x1,x2){ 
+  return "Dhaka";
+}
+var newNumber =  addnumber(2,4)+" is a capital";
+document.write(newNumber) */
+
+      //### class-16 Object
+      /* var MyPc ={
+  name: "Asus",
+  core:"5",
+  ram:"120GP",
+  pocessor: "8 Generation",
+} 
+ //document.write(MyPc['name'])    //quesition :  multi name
+ document.write(JSON.stringify(MyPc) ) */
+
+      // class-17 array ( index =  0, 1, 2,4,5,7,8,9)
+      /* var name = ['Mango', + 'Banana', 'Lichu'];
+document.write(name); */
+
+      /* var items=["Mango", "Apple", "Banana"];
+document.write(items[2]); */
+
+      //### class-18 - for loop over array
+      /* var items=["Mango", "Apple", "Banana"];
+var i;
+for(i=0; i<items.length; i=i+1){
+    document.write(items[i] + "<br>")
+} */
+
+      //#### class-19 --- for in loop -- array
+      /* var category = [ "banana", "Laptop", "Iphone", "Keyboards"]
+for(var item in category){
+  document.write(category[item] +"<br>")
+} */
+
+      //#### class-20 for in loop -- array
+      /* var person = {
+  name: "Aziz",
+  age : 25,
+  city: "Brahmanbaria",
+  height:"6 feet",
+}
+
+for(var item in person){
+   document.write(person[item] +"<br>" )
+} */
+
+      //### class-21 Array Concate & Form
+      /* var arr1 =['A','B','C'];
+var arr2 = ['D', 'E','F']
+var arr3 = arr1.concat(arr2);
+document.write(arr3 ); */
+
+      //array form (indext)
+      /* var name = "Learn with Aziz";
+var titleArray =Array.from(name);
+
+document.write(titleArray[11]) */
+
+      //### class-22 - Array Filter
+      /* var numArray = [30,32,40,43, 45,57,80,90,100];
+
+var result = numArray.filter(function(item){
+  return item>50
+})
+document.write(result);  */
+      //Anonamus fileter
+
+      //#### class-23 Array Find Find
+      /* var numArray=[30,32,40,45,50, 60,65,70,75,80, 90,100];
+
+var result =numArray.find(function(value){
+  return value<90 //less/Geter then all form =30
+})
+document.write(result); */
+
+      //Array Find FindIndex
+      /* var numArray=[30,32,40,45,50, 60,65,70,75,80, 90,100];
+
+var result =numArray.findIndex(function(value){
+  return value>60 //less/Geter then all form =30
+})
+document.write(result); */
+
+      //###class-24 array forEach
+      /* var numArray=[30,32,40,45,50, 60,65,70,75,80, 90,100];
+
+numArray.forEach(function(item){
+   document.write(item +"<br>") 
+}) */
+
+      //### class-25 -Array includes & indexOf
+      /* var numArray=[30,32,40,45,50, 60,65,70,75,80, 90,100];
+
+var result = numArray.includes(81)
+document.write(result); */
+
+      //### class-25 -Array indexOf
+      /* var numArray=[30,32,40,45,50, 60,65,70,75,80, 90,100];
+
+var result = numArray.indexOf(80)
+document.write(result); */
+
+      //### class-26 --Pop - Push - Reverse
+      // Reverse
+      /* var numArray=[30,32,40,45,50, 60,65,70,75,80, 90,100];
+var result = numArray.reverse()
+document.write(result); */
+
+      //push
+      /* var numArray=[30,32,40,45,50, 60,65,70,75,80, 90,100];
+numArray.push(100)
+numArray.push(102)
+numArray.push(104)
+document.write(numArray); */
+
+      //pop
+      /*var numArray=[30,32,40,45,50, 60,65,70,75,80, 90,100];
+numArray.pop()
+numArray.pop()
+numArray.pop()
+document.write(numArray); */
+
+      //### class-27 --Array Slice / Sort
+      //sort
+      /* var numArray=[40,45,50, 60,30,32,65,70,75,80, 90];
+numArray.sort();
+document.write(numArray); */
+
+      //sort ( decending > reverse)
+      /* var numArray=[40,45,50, 60,30,32,65,70,75,80, 90];
+numArray.sort().reverse();
+
+document.write(numArray); */
+
+      //Slice
+      /* var numArray=[40,45,50, 60,30,32,65,70,75,80, 90];
+var result = numArray.slice(1,3);
+
+document.write(result); */
+
+      //### class-28 -- Array Splice
+      //var numArray=[40,45,50, 60,30,32,65,70,75,80, 90];
+      // numArray.splice(index.remove.item);
+
+      // 60 remove
+      /* //var numArray=[40,45,50, 60,30,32,65,70,75,80, 90];
+numArray.splice(2,3)
+document.write(numArray); */
+
+      // 60 add splice()
+      /* var numArray=[40,45,50, 60,30,32,65,70,75,80, 90];
+numArray.splice(4,0,65)
+
+document.write(numArray); */
+
+      //### class- 29 String method
+      //charAt()
+      /* var country = "Bangladesh"
+document.write(country.charAt(7)) */
+
+      //concat() ( add + 2 = 1 )
+      /* ar country1 = "Bangladesh"
+var country2 = "USA"
+document.write(country1.concat(country2)) */
+
+      //indexOf() carecter find numbers l,s,o,s = 2,3,4,5,
+      /* var country = "Bangladesh"
+document.write(country.indexOf("a")); */
+
+      //lastIndexOf() carecter find numbers l,s,o,s = 2,3,4,5,
+      /* var country = "Bangladesh"
+document.write(country.lastIndexOf("a")); */
+
+      //#### class-30 --String methord
+      //replace
+      /* var country = "Bangladesh"
+document.write(country.replace("desh", "DESH")); */
+
+      //substr
+      /* var country = "Bangladesh"
+document.write(country.substr(6,9)); */
+
+      //#### Class-31 -- string substring
+      //substring - full lenght
+      /* var country = "Bangladesh"
+document.write(country.substr(6,10));  */
+
+      //toUpperCase
+      /* var country = "Bangladesh"
+document.write(country.toUpperCase()); */
+
+      //toLowerCase
+      /* var country = "Bangladesh"
+document.write(country.toLowerCase());  */
+
+      //lenght
+      /* var country = "   Bangladesh    "
+document.write(country.length); */
+
+      //trim
+      /* var country = "   Bangladesh    "
+var country1 = country.trim()
+document.write(country1.length); */
+
+      //### class-32 ---Date Object
+      //Date
+      /* var obj = new Date(); 
+document.write(obj.getDate()) */
+
+      //Day = week more = 1 day selected
+      /* var obj = new Date(); 
+document.write(obj.getDay()) */
+
+      //Years (recent years)
+      /* var obj = new Date(); 
+document.write(obj.getFullYear()) */
+
+      //Hours
+      /* var obj = new Date(); 
+document.write(obj.getHours()) */
+
+      //Minuites
+      /* var obj = new Date(); 
+document.write(obj.getMinutes()) */
+
+      //Milliseconds
+      /* var obj = new Date(); 
+document.write(obj.getMilliseconds())*/
+
+      //#### Math object --33
+      //abs()
+      /* var num = -7 ;
+document.write(Math.abs(num)); */
+
+      //ceil()
+      /* var num = 7.2 ;
+document.write(Math.ceil(num)); */
+
+      //floor()
+      /*var num = 7.2 ;
+document.write(Math.floor(num)); */
+
+      //Max
+      /*document.write(Math.max(34,23, 56,56,67, 56,66)) */
+
+      //Min
+      /* document.write(Math.min(34,23, 56,56,67, 56,66)) */
+
+      //Randowm
+      /* document.write(Math.random()); */
+
+      //Round
+      /* var num = 7.3;
+      document.write(Math.round(num)); */
+
+      ///#### class---34 Number
+
+      // isFinite = true / false
+      /* var num = 7.5;
+document.write(Number.isFinite(num)); */
+
+      // isInteger = true / false
+      // var num = "fkdasjf";
+      /* var num = 3;
+document.write(Number.isFinite(num)); */
+
+      //parseFloat = init from parseFloat transferent number
+      // Problems support
+      /* var num = "7.78"; // string to number converts
+document.write(Number.parseFloat(num));            // Problems support */
+
+      // parseInt =  floating form init number convert
+      /* var num = "7.89";
+document.write(Number.parseInt(num));    */ // Problems support
+
+      // toFixed .3456 point
+      /* var num = 7.50409095;
+document.write(num.toFixed(o)); */ //(4) (3)
+
+      // Number from string convert
+      /* var num = 5.094609;
+document.write(num.toString()); */
+
+      // split
+      /* let string = "I feel in love with Javacript Programing Language";
+console.log(string.split("")); */
+    </script>
+  </body>
+</html>
