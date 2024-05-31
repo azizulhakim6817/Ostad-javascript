@@ -1,6 +1,8 @@
 // what is Array,index? Write a simple Array
 // What is Object?
 
+//*********** Array-index [0,1,2,3,4,5,6]
+
 /* let city = ["Dhatak", "Khulna", "Barishal", "Brahmanbaria"];
 console.log(city[0]); */
 
@@ -26,9 +28,8 @@ console.log(Download); */
 };
 console.log(OneCategory["categoryName"]); */
 
-// What is JSON?
-
-let AllCategoryList = [
+//*********** */ What is JSON?  index [0,1,2,3,4,5,6]
+/* let AllCategoryList = [
   {
     id: 1,
     categoryName: "Laptop",
@@ -59,4 +60,50 @@ let AllCategoryList = [
 
 console.log(AllCategoryList[0]);
 
-// console.log(AllCategoryList[0]["categoryName"]);
+console.log(AllCategoryList[0]["categoryName"]); */
+
+//**** Personal WhatsUp Group */
+
+const AllCategory = [
+  {
+    id: 1,
+    name: "Azizul hakim",
+    age: 25,
+    city: "Brahmanbaria",
+    isStudent: "false",
+  },
+  {
+    id: 2,
+    name: "Somn",
+    age: 25,
+    city: "Khulna",
+    isStudent: "true",
+  },
+
+  {
+    id: 3,
+    name: "Assad",
+    age: 25,
+    city: "Shylet",
+    isStudent: "true",
+  },
+
+  {
+    id: 3,
+    name: "Jowel",
+    age: 25,
+    city: "Sudiarb",
+    isStudent: "true",
+  },
+];
+
+const i = 0;
+for (i = 0; AllCategory.length > i; i++) {
+  console.log(AllCategory[i]);
+}
+
+// null / undefined
+/* let a =null
+let b ;
+console.log(a);
+console.log(b); */
