@@ -1,7 +1,7 @@
-function ObjAlert() {
+/* function ObjAlert() {
   alert("Save successfull");
 }
 
 function ObjConfirm() {}
 
-function ObjPrompt() {}
+function ObjPrompt() {} */

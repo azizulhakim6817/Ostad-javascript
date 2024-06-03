@@ -64,7 +64,7 @@ console.log(AllCategoryList[0]["categoryName"]); */
 
 //**** Personal WhatsUp Group */
 
-const AllCategory = [
+/* const AllCategory = [
   {
     id: 1,
     name: "Azizul hakim",
@@ -101,9 +101,11 @@ const i = 0;
 for (i = 0; AllCategory.length > i; i++) {
   console.log(AllCategory[i]);
 }
-
+ */
 // null / undefined
 /* let a =null
 let b ;
 console.log(a);
 console.log(b); */
+
+//####### Start class module-8 ########

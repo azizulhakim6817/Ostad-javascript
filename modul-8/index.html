@@ -4,12 +4,263 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <title>Module-8 javascript</title>
   </head>
+
   <body>
-    <div>
-      <h1>Hollo Mern Stack Developer</h1>
-    </div>
+    <!-- <button onclick="ObjAlert()">Click</button> -->
+    <!-- <button onclick="ObjConfirm()">Click</button> -->
+    <!-- <button onclick="ObjPromt()">Click</button> -->
+    <!-- <button onclick="ObjClose()">Click</button> -->
+
+    <!-- class-38  -->
+    <!-- onclick / onchange / onmouseover / nomouseout / onkeydown / onload / -->
+    <!--   <button onclick="MyEvent('Click')">Click</button>
+      <button onmouseover="MyEvent('mous over Click')">Click</button>
+      <button onmouseout="MyEvent('out Click')">Click</button>  -->
+
+    <!--##### class-39  -->
+    <!--  <input onchange="MyEvent('Change')"></br>s
+     <input onkeydown="MyEvent('Change keydown')"></br>
+     <input onkeyup="MyEvent('Change keyup')"></br> -->
+
+    <!-- < onload="MyEvent('websit loaded')" -->
+
+    <!--##### class-41  -->
+    <!-- <h1 id="MyId"></h1> -->
+    <!--  <h1 class="MyClass">hello</h1>
+    <h1 class="MyClass">Hi</h1>
+    <button class="MyClass">Click</button> -->
+
+    <!--   <p>hi</p>
+    <p>helo</p>
+    <p>js</p> -->
+
+    <!--   ####### Class -42 / HTML DOM Document 
+   cookie / url / replace / domain mane / dateModifie / title / window Open / close -->
+
+    <!--  <p></p>
+    <button onclick="Demo()">Click</button> -->
+
+    <!-- ####### Class -42 / HTML DOM Document -->
+    <!-- <button onclick="Demo()">Click</button> -->
+
+    <!--#### Class -44 / js DOM Working with form input  -->
+    <!--   <input id="num1" /><br /><br />
+    <input id="num2" /><br /><br />
+    <button onclick="AddTwoNumber()">Add</button> -->
+
+    <!-- Class--45 DOM Manipulate CSS -->
+    <!-- <h1 id="MyId">Bangladesh</h1>
+    <button onclick="AddTwoNumber()">Add</button>
+    <button onclick="RemoveTwoNumber()">Remove</button> -->
+
+    <!-- Class--46 / DOM crate element / Append element -->
+    <!--  <ul id="MyItems"></ul>
+    <br /><br />
+    <input id="MyInput" /><br /><br />
+    <button onclick="AddItem()">Add Items</button> -->
+
+    <!--class-47 /  DOM Change Attribute Value -->
+    <!-- <img
+   id="MyImg"
+   width="140"
+   height="140"
+   src="https://plus.unsplash.com/premium_photo-1682090900111-ec0628df9890?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8"
+   />
+   <br /><br />
+   <button onclick="ChangeAttr()">Change</button> -->
+
+    <!-- class --48 / DOM Query Selector -->
+
+    <script>
+      //####### Class -35 / windows object
+      /*    function ObjAlert() {
+             alert("Save Success");
+           } */
+
+      // true / false result
+      /* function ObjConfirm() {
+             let result = confirm("Do you want to deleted ");
+             document.write(result);
+           } */
+
+      // User imput feild
+      /* function ObjPromt() {
+             let result = prompt("Write your name");
+             console.log(result);
+           } */
+
+      // New Browser opening
+      /*  function ObjOpen() {
+             open();
+           } */
+
+      // Relate browser close to close
+      /*  function ObjClose() {
+             close()
+           } */
+
+      // 10 second alert
+      /*       setTimeout(function(){
+             alert("Alert after 5 minutes")
+           },1000)  */ //10000 Milli second = 10 seconds
+
+      //####### Class -36 / Navigator Object
+      /*      let appCodeName =  navigator.appCodeName
+             let appName = navigator.appName;
+             let appVersion = navigator.appVersion;
+             let cookieEnabled = navigator.cookieEnabled;
+             let language = navigator.language;
+             let userAgent = navigator.userAgent;
+             let platfrom = navigator.platfrom;
+
+             document.write(appCodeName + "<br>")
+             document.write(appName + "<br>")
+             document.write(appVersion + "<br>")
+             ddocument.write(cookieEnabled + "<br>")
+             document.write(language + "<br>")
+             document.write(userAgent + "<br>")
+             ocument.write(platfrom + "<br>") */
+
+      //####### Class -37 / geolocation
+      /* navigator.geolocation.getCurrentPosition(function(position){
+           let altitude = position.coords.altitude;
+           let latitude = position.coords.latitude;
+           let longitude = position.coords.longitude;
+           let speed = position.coords.speed;
+
+           document.write("altitude : " + altitude +"<br>")
+           document.write("latitude : " + latitude +"<br>")
+           document.write("logitude : " + longitude +"<br>")
+           document.write("speed :" + speed +"<br>")
+
+         }) */
+
+      //####### Class -38 / common events
+      // onclick / onchange / onmouseover / nomouseout / onkeydown / onload /
+
+      /*   function MyEvent(msg) {
+         console.log("")
+       } */
+
+      //####### Class -39 / common events
+      /*   function MyEvent(msg) {
+         console.log(msg)
+       } */
+
+      //####### Class -40 / introduction to DOM
+      /*   When a web page is loaded, the browser create a Document Object Model of the page. With the HTML DOM, javascript can access and change all the element of an HTML documemt.
+       >> javascript can change all the HTML element in this page.
+       >> javascript can change all the HTML attributes in this page.
+       >> javascript can change all the CSS in this page.
+       >> javascript can remove exising HTML the HTML elememt and attributes.
+       >> javascript can add new HTML the HTML elememt and attributes.=
+      >> javascript can react to all exising HTML event in this page.
+      >> javascript can create new HTML event in this page. */
+
+      //####### Class -41 / Finding Elememt By DOM
+      // id
+      /* var MyElement = document.getElementById("MyId");
+           MyElement.innerHTML = "Eid Mobarak"; */
+
+      // class MyClass ==   Array line (index number finding) 0,1,2,3,4,
+      /*  var MyElement = document.getElementsByClassName("MyClass");
+           MyElement[0].innerHTML = "H1 element tag";
+           MyElement[1].innerHTML = "Js";
+           MyElement.innerHTML[2] = "Learn more.."; */
+
+      //Tag selector to select
+      /* var MyElement = document.getElementsByTagName("p");
+           MyElement[0].innerHTML = "HTML + CSS";
+           MyElement[2].innerHTML = "js Developer"; */
+
+      //####### Class -42 / HTML DOM Document
+      // cookie / url / replace / domain mane / dateModifie / title / window Open / close
+      // function Demo() {
+      /*  let info = document.cookie;
+             document.getElementsByTagName("p")[0].innerHTML = info;  */
+      /* let info = document.domain;
+             document.getElementsByTagName("p")[0].innerHTML = info; */
+      /*  let info = document.lastModified;
+             document.getElementsByTagName("p")[0].innerHTML = info; */
+      /*   let info = document.title;
+             document.getElementsByTagName("p")[0].innerHTML = info; */
+      /* let info = document.URL;
+             document.getElementsByTagName("p")[0].innerHTML = info; */
+      // }
+
+      /*   function Demo() {
+             document.open("text/html", "replace");
+             document.write("<h1>Aziz</h1>");
+             document.close();
+           } */
+
+      //####### Class -43 / HTML DOM Document / Window new tap open or close
+      // New tap / window new tap opening
+      /*   function Demo() {
+             let w = window.open();
+              w.document.open();
+             w.document.write("Hello new windows");
+              w.document.close();
+            } */
+
+      ///#####  Class -44 / js DOM Working with form input */
+      /* function AddTwoNumber() {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        console.log(num1);
+
+        let result = parseFloat(num1) + parseFloat(num2);
+        alert(result);
+      } */
+
+      /* Class--45 DOM Manipulate CSS  */
+      /* function AddTwoNumber() {
+        let H1Tag = document.getElementById("MyId");
+        H1Tag.classList.add("text-primary");
+      }
+
+      function RemoveTwoNumber() {
+        let H1Tag = document.getElementById("MyId");
+        H1Tag.classList.remove("text-primary");
+      } */
+
+      /* Class--46 / DOM crate element / Append element  */
+      /*  function AddItem() {
+        var itemValue = document.getElementById("MyInput").value;
+        var ListItem = document.createElement("li");
+        ListItem.innerHTML = itemValue;
+
+        var MyItems = document.getElementById("MyItems");
+        MyItems.appendChild(ListItem);
+      } */
+
+      //DOM Change Attribute Value
+      /* function ChangeAttr() {
+        var MyImg = document.getElementById("MyImg");
+        MyImg.src =
+          "https://images.unsplash.com/photo-1563026915-32eba3e315de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D";
+        MyImg.width = "300";
+        MyImg.height = "300";
+      } */
+
+      //class --48 / DOM Query Selector
+      function FindElement() {
+        document.querySelector("#MyId").innerHTML = "H1 Tags";
+        document.querySelector(".MyClass").innerHTML = "H6 Manupulated";
+        document.querySelector("h4").innerHTML = "H4 Manupulated";
+        document.querySelector('p[name="MyName"]').innerHTML = "Pharagrap tags";
+      }
+    </script>
+    <h1 id="MyId">Hello</h1>
+    <h4>h4</h4>
+    <h6 class="MyClass">H6</h6>
+    <p name="MyName">tewtew</p>
+    <button onclick="FindElement()">Click</button>
     <script src="index.js"></script>
+    <script src="class.js"></script>
   </body>
 </html>
